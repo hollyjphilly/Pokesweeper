@@ -1,0 +1,84 @@
+body {
+    background-image: url('./assets/gameboy.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#root {
+    margin-top: 181px;
+    margin-left: 12px;
+}
+
+.tile {
+    background-image: url('./assets/hiddengrass.png');
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    color: #26654e;
+    font-family: 'Press Start 2P', cursive;
+    /* border: 2px solid rgb(255, 0, 217); */
+}
+
+.text {
+    /* border: 2px solid lime; */
+    display: inline-block;
+    padding-top: 7px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.explored {
+    background-image: url('./assets/revealedgrass.png');
+    background-size: cover;
+}
+
+.bombed {
+    background-image: url('./assets/voltorb.png');
+    background-size: cover;
+}
+
+.flagged {
+    background-image: url('./assets/flag.png');
+    background-size: cover;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-box {
+    position: absolute;
+    top: 250px;
+    /* left: 30px; */
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+
+    
+}
+
+img {
+    margin-top: 15px;
+}
+

@@ -66,9 +66,6 @@ class Game extends React.Component {
                         <div className="modal-box">
                             <img src="./src/assets/loss.png"/>
                             <img onClick={this.restartGame} src="./src/assets/restart.png" />
-                            <div className="stopwatch-after" id="loss-time">
-                                {minutes}:{seconds}:{centiseconds}
-                            </div>
                         </div>
                     </div>
                 </div>

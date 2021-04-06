@@ -82,8 +82,6 @@ body {
     display:flex;
     flex-direction: column;
     align-content: center;
-
-    
 }
 
 img {
@@ -101,4 +99,85 @@ h5 {
     padding: 5px;
     letter-spacing: 1.25px;
     border-radius: 5px;
+}
+
+.modal-start {
+    position: absolute;
+    top: 0;
+    /* left: 30px; */
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 1px 6px -1px #000000;
+}
+
+.modal-start > img {
+    margin:0;
+}
+
+.modal-start > img:last-child {
+    width: 99px;
+    position: absolute;
+    z-index: 4;
+    margin-top: 65px;
+    display: inline-block;
+    animation: wiggle 500ms infinite;
+    cursor: pointer;
+}
+
+.modal-start > img:last-child:hover {
+    animation: none;
+    cursor: pointer;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(3deg);}
+  75% {transform: rotate(-3deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes pop {
+    0% { transform: scale(0.7); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.7); }
+}
+
+.stopwatch {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 4px;
+    padding: 4px;
+    position: relative;
+    top: -170px;
+    left: -70px;
+    width: fit-content;
+    letter-spacing: 1.1px;
+}
+
+.stopwatch-after {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(191, 121, 0);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px;
+    position: absolute;
+    top: 30px;
+    left: 41px;
+    width: fit-content;
+    letter-spacing: 1.1px;
+}
+
+#loss-time {
+    color: rgb(42, 143, 137);
+}
+
+h1 {
+    color: #fff;
+    font-family: ;
 }

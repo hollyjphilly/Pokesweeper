@@ -58,6 +58,9 @@ class Game extends React.Component {
             return (
                 <div>
                     <Board gameBoard={this.state.board} updateGame={this.updateGame} />
+                    {<div className="stopwatch">
+                                {minutes}:{seconds}:{centiseconds}
+                    </div>}
                     <div className="modal">
                         <section className="modal-screen"></section>
                         <div className="modal-box">
@@ -74,6 +77,9 @@ class Game extends React.Component {
             return (
                 <div>
                     <Board gameBoard={this.state.board} updateGame={this.updateGame} />
+                    {<div className="stopwatch">
+                                {minutes}:{seconds}:{centiseconds}
+                    </div>}
                     <div className="modal">
                         <section className="modal-screen"></section>
                         <div className="modal-box">

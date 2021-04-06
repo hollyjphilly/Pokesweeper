@@ -155,7 +155,8 @@ h5 {
     position: relative;
     top: -170px;
     left: -70px;
-    width: 62px;
+    text-align: center;
+    max-width: 60px;
     letter-spacing: 1.1px;
 }
 
@@ -169,7 +170,8 @@ h5 {
     position: absolute;
     top: 30px;
     left: 41px;
-    width: 62px;
+    text-align: center;
+    max-width: 60px;
     letter-spacing: 1.1px;
 }
 

@@ -1,1 +1,1 @@
-[Click here to play!](hollyjphilly.github.io/Pokesweeper)
+[Click here to play!](https://hollyjphilly.github.io/Pokesweeper/)

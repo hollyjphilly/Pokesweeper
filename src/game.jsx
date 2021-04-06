@@ -58,17 +58,17 @@ class Game extends React.Component {
             return (
                 <div>
                     <Board gameBoard={this.state.board} updateGame={this.updateGame} />
-                    {<div className="stopwatch">
-                                {minutes}:{seconds}:{centiseconds}
-                    </div>}
+                    <div className="stopwatch">
+                        {minutes}:{seconds}:{centiseconds}
+                    </div>
                     <div className="modal">
                         <section className="modal-screen"></section>
                         <div className="modal-box">
                             <img src="./src/assets/loss.png"/>
                             <img onClick={this.restartGame} src="./src/assets/restart.png" />
-                            {<div className="stopwatch-after" id="loss-time">
+                            <div className="stopwatch-after" id="loss-time">
                                 {minutes}:{seconds}:{centiseconds}
-                            </div>}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,17 +77,17 @@ class Game extends React.Component {
             return (
                 <div>
                     <Board gameBoard={this.state.board} updateGame={this.updateGame} />
-                    {<div className="stopwatch">
-                                {minutes}:{seconds}:{centiseconds}
-                    </div>}
+                    <div className="stopwatch">
+                        {minutes}:{seconds}:{centiseconds}
+                    </div>
                     <div className="modal">
                         <section className="modal-screen"></section>
                         <div className="modal-box">
                             <img src="./src/assets/win.png" />
                             <img onClick={this.restartGame} src="./src/assets/restart.png" />
-                            {<div className="stopwatch-after">
+                            <div className="stopwatch-after">
                                 {minutes}:{seconds}:{centiseconds}
-                            </div>}
+                            </div>
                         </div>
                     </div>
                 </div>

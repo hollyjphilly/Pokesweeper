@@ -38,8 +38,8 @@ class Game extends React.Component {
                     <div className="modal">
                         <section className="modal-screen"></section>
                         <div className="modal-box">
-                            <img src="./assets/loss.png"/>
-                            <img onClick={this.restartGame} src="./assets/restart.png" />
+                            <img src="./src/assets/loss.png"/>
+                            <img onClick={this.restartGame} src="./src/assets/restart.png" />
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@ class Game extends React.Component {
                     <div className="modal">
                         <section className="modal-screen"></section>
                         <div className="modal-box">
-                            <img src="./assets/win.png" />
-                            <img onClick={this.restartGame} src="./assets/restart.png" />
+                            <img src="./src/assets/win.png" />
+                            <img onClick={this.restartGame} src="./src/assets/restart.png" />
                             </div>
                     </div>
                 </div>

@@ -116,7 +116,7 @@ export class Board {
     let won = true;
     this.grid.forEach(row => {
       row.forEach(tile => {
-        if (tile.flagged === tile.explored || tile.flagged !== tile.bombed) {
+        if ((tile.explored === false && tile.bombed === false)  || (tile.flagged === true && tile.bombed === false)) {
           won = false;
         }
       });
